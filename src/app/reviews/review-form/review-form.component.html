@@ -1,0 +1,7 @@
+<form #revForm="ngForm" (ngSubmit)="submit()">
+    <label>Review:
+        <input type="text" name="content" #content="ngModel" [(ngModel)]="review.content"/>
+    </label>
+    <button type="submit">Add Review</button>
+</form>
+<!--{{review.bookId + "  "+review.content}}-->
